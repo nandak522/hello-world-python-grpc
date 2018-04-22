@@ -1,4 +1,4 @@
-from hello_world_pb2_grpc import HelloWorldGreeterServicer
+from hello_world_python_grpc.service.hello_world_pb2_grpc import HelloWorldGreeterServicer
 import time
 import socket
 

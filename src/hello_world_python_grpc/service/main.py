@@ -1,8 +1,8 @@
 import grpc
 import time
 from concurrent import futures
-import hello_world_pb2_grpc
-from handlers import HelloWorldGreeterServicer
+from hello_world_python_grpc.service import hello_world_pb2_grpc
+from hello_world_python_grpc.service.handlers import HelloWorldGreeterServicer
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 
