@@ -1,4 +1,5 @@
 from hello_world_python_grpc.service.hello_world_pb2_grpc import HelloWorldGreeterServicer
+from hello_world_python_grpc.service.hello_world_pb2 import HelloWorldResponse
 import time
 import socket
 
@@ -13,4 +14,4 @@ def elapsed():
 
 class Greeter(HelloWorldGreeterServicer):
     def SayHello(self, request, context):
-        return "[HOST:%s] Hello World (Python gRPC)! (up %s)\n" % (socket.gethostname(), elapsed())
+        return HelloWorldResponse(text="[HOST:%s] Hello World (Python gRPC)! (up %s)\n" % (socket.gethostname(), elapsed()))
