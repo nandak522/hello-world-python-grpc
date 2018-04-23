@@ -1,0 +1,26 @@
+.git/*
+**/migration/*
+*.db
+*.NULL
+*.idx
+**/*.pyc
+db
+*.DS_Store
+idea/*
+.coverage
+**/node_modules
+output-*.json
+# Don't say this, this is too generic: test/
+tags
+.tags
+**/lua/*
+**/dump*
+tables.txt
+test/*
+sql
+bin
+include
+lib
+pip-selfcheck.json
+pyvenv.cfg
+*egg-info*
