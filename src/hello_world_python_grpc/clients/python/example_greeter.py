@@ -1,6 +1,6 @@
 import grpc
-from hello_world_python_grpc.service import hello_world_pb2_grpc
-from hello_world_python_grpc.service import hello_world_pb2
+from hello_world_python_grpc.server import hello_world_pb2_grpc
+from hello_world_python_grpc.server import hello_world_pb2
 
 
 def main():
