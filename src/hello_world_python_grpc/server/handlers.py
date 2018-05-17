@@ -21,3 +21,4 @@ class Greeter(HelloWorldGreeterServicer):
             % (socket.gethostname(), elapsed(),
                getattr(request, 'greeting', '')))
         return response
+
