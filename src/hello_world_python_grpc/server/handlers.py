@@ -15,6 +15,9 @@ def elapsed():
 
 class Greeter(HelloWorldGreeterServicer):
     def SayHello(self, request, context):
-        return HelloWorldResponse(
-            text="[HOST:%s] Hello World (Python gRPC Istio)! (up %s)\n" % (
-                socket.gethostname(), elapsed()))
+        response = HelloWorldResponse(
+            text=
+            "[HOST:%s] Hello World (Python gRPC)! (up %s)\n Request.greeting:%s"
+            % (socket.gethostname(), elapsed(),
+               getattr(request, 'greeting', '')))
+        return response
